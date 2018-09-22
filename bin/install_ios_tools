@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# When an .xcconfig file contains multiple assignments of the same build setting, later assignments using $(inherited) will inherit from earlier assignments when using the new build system. The old build system discards all except the last assignment. This can cause the evaluated result to be different if $(inherited) is used in the value. You can enable a setting to emit a warning if any of these cases are found by running defaults write com.apple.dt.XCBuild EnableCompatibilityWarningsForXCBuildTransition YES. (37833468)
+defaults write com.apple.dt.XCBuild EnableCompatibilityWarningsForXCBuildTransition YES
+
+xcode-select -p 
+if [ $? -eq 2 ]; then
+	echo "Xcode command line tools not installed, installing now.."
+  xcode-select --install
+fi
+
+if which brew >/dev/null; then
+	echo "homebrew already installed"
+else
+	echo "homebrew not installed, installing now.."
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+# install / update bundler which is needed for installing Gemfile bundles
+sudo gem install bundler -V --no-ri --no-rdoc
+
+brew update
+
+# the `brew ls ...` workaround ensures that brew upgrades the formula to the newest version or installs it if not yet installed
+
+brew ls --versions mint && brew upgrade mint || brew install mint
+
+brew ls --versions cloc && brew upgrade cloc || brew install cloc
+
+brew ls --versions mergepbx && brew upgrade mergepbx || brew install mergepbx

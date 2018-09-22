@@ -1,0 +1,14 @@
+#!/bin/bash
+
+git config --global push.default upstream
+git config --global pull.ff only
+git config --global fetch.prune true
+git config --global merge.conflictstyle diff3
+git config --global color.ui true
+
+git config --global help.browser chrome
+git config --global web.browser chrome
+
+git config --global core.excludesfile = ~/.gitignore_global
+
+git config --global mergetool.mergepbx.cmd 'mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"'
