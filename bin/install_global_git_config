@@ -3,6 +3,7 @@
 git config --global push.default upstream
 git config --global pull.ff only
 git config --global fetch.prune true
+git config --global fetch.pruneTags true
 git config --global merge.conflictstyle diff3
 git config --global color.ui true
 
