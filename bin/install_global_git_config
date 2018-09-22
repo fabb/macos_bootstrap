@@ -10,6 +10,6 @@ git config --global color.ui true
 git config --global help.browser chrome
 git config --global web.browser chrome
 
-git config --global core.excludesfile = ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
 
 git config --global mergetool.mergepbx.cmd 'mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"'
