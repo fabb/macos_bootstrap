@@ -5,5 +5,7 @@ cd ${0%/*}
 ./install_ios_tools
 ./install_global_git_config
 
-# install nvm
+# install nvm and node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+nvm install --lts
+nvm alias default node
