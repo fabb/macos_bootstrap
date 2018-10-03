@@ -1,0 +1,16 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Cobalt.tmTheme",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	],
+	"open_files_in_new_window": false,
+	"theme": "Default.sublime-theme",
+	"find_selected_text": true,
+    "scroll_past_end": true,
+    "drag_text": false,
+    "show_encoding": true,
+    "font_face": "Fira Code"
+}
