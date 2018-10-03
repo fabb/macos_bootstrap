@@ -2,23 +2,7 @@
 
 cd ${0%/*}
 
-./install_ios_tools
+./install_general_macos_tools
 ./install_global_git_config
-
-# install nvm and node
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-nvm install --lts
-nvm alias default node
-
-# needs sublime installed
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
-
-brew tap caskroom/cask
-brew tap buo/cask-upgrade
-echo 'tools installed with brew cask can be updated via `brew cu`'
-
-brew cask install qlcolorcode
-brew cask install qlimagesize
-brew cask install qlmarkdown
-brew cask install qlstephen
-brew cask install quicklook-json
+./install_ios_tools # needs Xcode installed first
+./install_web_tools
