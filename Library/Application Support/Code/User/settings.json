@@ -1,12 +1,73 @@
 {
-    "editor.formatOnSave": true,
     "workbench.colorTheme": "Solarized Light",
     "emmet.triggerExpansionOnTab": true,
-    "javascript.referencesCodeLens.enabled": true,
-    "typescript.referencesCodeLens.enabled": true,
-    "typescript.implementationsCodeLens.enabled": true,
     "workbench.statusBar.feedback.visible": false,
     "telemetry.enableTelemetry": false,
     "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorCustomizations": {
+        "[Solarized Light]": {
+            "editor.selectionBackground": "#fdd76d",
+            "editor.findMatchBackground": "#ffd76d"
+        }
+    },
+    "editor.dragAndDrop": false,
+    "editor.multiCursorModifier": "alt",
+    "less.scannerExclude": [
+        "**/.git",
+        "**/node_modules",
+        "!**/node_modules/@wh",
+        "**/bower_components"
+    ],
+    "todo-tree.defaultHighlight": {
+        "foreground": "green",
+        "type": "none"
+    },
+    "todo-tree.customHighlight": {
+        "TODO": {},
+        "FIXME": {}
+    },
+    "files.autoSave": "onFocusChange",
+    "editor.autoClosingQuotes": "never",
+    "editor.renderControlCharacters": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.restoreWindows": "all",
+    "workbench.commandPalette.preserveInput": true,
+    "workbench.quickOpen.preserveInput": true,
+    "search.exclude": {
+        ".next": true,
+        ".server": true,
+        "**/node_modules/.cache": true,
+        "package-lock.json": true
+    },
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "jest.autoEnable": false,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "es5",
+    "prettier.tslintIntegration": true,
+    "bookmarks.useWorkaroundForFormatters": true,
+    "files.associations": {
+        "*.hs": "haskell"
+    },
+    "todohighlight.keywordsPattern": "TODO|FIXME",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.gotoLocation.multiple": "goto",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true
 }
