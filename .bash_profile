@@ -14,6 +14,7 @@ alias be='bundle exec'
 alias pi='bundle exec pod install --repo-update'
 alias pin='bundle exec pod install'
 alias fixpod='git reset Podfile.lock && git checkout Podfile.lock && git reset Pods/Manifest.lock && git checkout Pods/Manifest.lock && git diff --name-only --diff-filter=U Pods/ | xargs -I{} git reset "{}" && bundle exec pod install --repo-update'
+alias fixpodn='git reset Podfile.lock && git checkout Podfile.lock && git reset Pods/Manifest.lock && git checkout Pods/Manifest.lock && git diff --name-only --diff-filter=U Pods/ | xargs -I{} git reset "{}" && bundle exec pod install'
 alias gp='git-pull-all'
 
 export MAVEN_OPTS="-Xmx1048m -Xms256m -XX:MaxPermSize=312M"
