@@ -12,5 +12,6 @@
     "scroll_past_end": true,
     "drag_text": false,
     "show_encoding": true,
-    "font_face": "Fira Code"
+    "font_face": "Fira Code",
+    "word_wrap": false,
 }
