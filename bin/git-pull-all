@@ -10,7 +10,8 @@ git fetch $remote
 
 for branch in $(git for-each-ref refs/heads --format="%(refname:short)"); do
         upbranch=$(git config --get branch.$branch.merge | sed 's:refs/heads/::');
-        if [ "$branch" = "$upbranch" ]; then
+        branch_remote=$(git config --get branch.$branch.remote);
+        if [ "$branch" = "$upbranch" ] && [ "$remote" = "$branch_remote" ]; then
                 if [ "$branch" = "$curbranch" ]; then
                         echo Fast forwarding current branch $curbranch
                         color git merge --ff-only $remote/$upbranch
