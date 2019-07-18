@@ -1,5 +1,8 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Cobalt.tmTheme",
+	"drag_text": false,
+	"find_selected_text": true,
+	"font_face": "Fira Code",
 	"font_size": 13,
 	"ignored_packages":
 	[
@@ -7,11 +10,8 @@
 		"Vintage"
 	],
 	"open_files_in_new_window": false,
+	"scroll_past_end": true,
+	"show_encoding": true,
 	"theme": "Default.sublime-theme",
-	"find_selected_text": true,
-    "scroll_past_end": true,
-    "drag_text": false,
-    "show_encoding": true,
-    "font_face": "Fira Code",
-    "word_wrap": false,
+	"word_wrap": false
 }

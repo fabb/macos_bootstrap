@@ -1,4 +1,5 @@
 source ~/git-completion.bash
+source /usr/local/etc/profile.d/z.sh
 
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
@@ -18,7 +19,9 @@ alias fixpod='git reset Podfile.lock && git checkout Podfile.lock && git reset P
 alias fixpodn='git reset Podfile.lock && git checkout Podfile.lock && git reset Pods/Manifest.lock && git checkout Pods/Manifest.lock && git diff --name-only --diff-filter=U Pods/ | xargs -I{} git reset "{}" && bundle exec pod install'
 alias gp='git-pull-all'
 
-export MAVEN_OPTS="-Xmx1048m -Xms256m -XX:MaxPermSize=312M"
+alias rm=trash
+
+export MAVEN_OPTS="-Xmx1048m -Xms256m"
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
