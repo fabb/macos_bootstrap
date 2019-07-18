@@ -1,0 +1,3 @@
+#!/bin/sh
+
+for branch in `git branch -r --merged develop | grep -v origin/develop | grep -v origin/master`; do echo -e `git show --format="%ci %cr %an" $branch | head -n 1` \\t$branch; done | sort -r
