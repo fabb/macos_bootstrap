@@ -1,6 +1,5 @@
 {
     "workbench.colorTheme": "Solarized Light",
-    "emmet.triggerExpansionOnTab": true,
     "telemetry.enableTelemetry": false,
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
@@ -20,11 +19,11 @@
     "workbench.commandPalette.preserveInput": true,
     "workbench.quickOpen.preserveInput": true,
     "search.exclude": {
-        ".next": true,
-        ".server": true,
+        "**/.next": true,
+        "**/.server": true,
         "**/node_modules/.cache": true,
-        "legacy/node_modules": true,
-        "package-lock.json": true,
+        "**/npm-shrinkwrap.json": true,
+        "**/package-lock.json": true,
         "yarn.lock": true
     },
     "editor.acceptSuggestionOnCommitCharacter": false,
@@ -46,7 +45,6 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.maxTokenizationLineLength": 25000,
-    "window.zoomLevel": 0,
     "git.confirmSync": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "[html]": {
@@ -115,5 +113,19 @@
     "[yaml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "terminal.integrated.rendererType": "experimentalWebgl",
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "redhat.telemetry.enabled": false,
+    "editor.bracketPairColorization.enabled": true,
+    "emmet.excludeLanguages": [
+        "markdown",
+        "typescript",
+        "typescriptreact"
+    ],
+    "git.enableSmartCommit": true
 }
