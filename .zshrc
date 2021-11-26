@@ -116,7 +116,7 @@ plugins=(
   npm
   nvm
   brew
-  osx
+  macos
 )
 
 source $ZSH/oh-my-zsh.sh
