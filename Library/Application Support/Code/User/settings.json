@@ -122,10 +122,11 @@
     },
     "redhat.telemetry.enabled": false,
     "editor.bracketPairColorization.enabled": true,
-    "emmet.excludeLanguages": [
-        "markdown",
-        "typescript",
-        "typescriptreact"
-    ],
-    "git.enableSmartCommit": true
+    "emmet.excludeLanguages": ["markdown"],
+    "git.enableSmartCommit": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": false,
+        "source.organizeImports": false
+    }
 }
