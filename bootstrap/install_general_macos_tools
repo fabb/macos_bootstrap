@@ -8,24 +8,29 @@ if which brew >/dev/null; then
 	echo "homebrew already installed"
 else
 	echo "homebrew not installed, installing now.."
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/ehrentfa/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 brew update
 
 # Brew Cask
-brew tap caskroom/cask
+brew tap homebrew/cask
 brew tap buo/cask-upgrade
+brew tap homebrew/cask-fonts
 echo 'tools installed with brew cask can be updated via `brew cu`'
 
 # QuickLook plugins for Finder
-brew cask install qlcolorcode
-brew cask install qlimagesize
-brew cask install qlmarkdown
-brew cask install qlstephen
-brew cask install quicklook-json
+#brew install --cask qlcolorcode
+#brew install --cask qlimagesize
+#brew install --cask qlmarkdown
+#brew install --cask qlstephen
+#brew install --cask quicklook-json
 
+brew install --cask font-fira-code
+brew install --cask font-inconsolata-for-powerline
 
 # install / update bundler which is needed for installing Gemfile bundles
 # not using sudo, since it expects the GEM_HOME to be set to a path inside $HOME
-gem install bundler -V --no-ri --no-rdoc
+gem install bundler -V

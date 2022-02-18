@@ -4,6 +4,8 @@ export PATH=$HOME/.local/bin:$PATH
 export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/bin:$PATH
 
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
 export CLICOLOR=1
 
 alias be='bundle exec'
@@ -51,7 +53,7 @@ export NVM_DIR="$HOME/.nvm"
 
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/fabian/.oh-my-zsh"
+export ZSH="/Users/ehrentfa/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -123,7 +125,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-. /usr/local/etc/profile.d/z.sh
+# . /usr/local/etc/profile.d/z.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
